@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "valencia", "1ca", "ffffffffffff", "small"]);</script>
+  <script async src="//waust.at/d.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Spotkania Dyskretne</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta property="og:image" content="https://i.postimg.cc/Gmf0t5VS/518243817-122096425034940231-5815459609670978079-n.jpg">
+  <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
+
+  <style>
+    :root {
+      --primary-color: #ff0080;
+      --secondary-color: #7928ca;
+      --text-color: #fff;
+      --background-color: #000;
+      --shadow-color: rgba(255, 0, 128, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      overflow-x: hidden;
+    }
+
+    #VideoBg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .logo img {
+      width: 100%;
+      max-width: 240px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 10px #fff);
+      border-radius: 50%;
+    }
+
+    .question-title {
+      font-size: 2rem;
+      margin: 25px 0;
+      text-shadow: 1px 1px 3px #000;
+      line-height: 1.4;
+    }
+
+    .buttons-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .step-btn {
+      width: 100%;
+      max-width: 100%;
+      padding: 18px 24px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 15px var(--shadow-color);
+      text-align: center;
+    }
+
+    .step-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 0, 128, 0.6);
+    }
+
+    a.step-btn {
+      text-decoration: none;
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      .logo img {
+        max-width: 200px;
+        border-radius: 50%;
+      }
+
+      .question-title {
+        font-size: 1.4rem;
+      }
+
+      .step-btn {
+        font-size: 1.05rem;
+        padding: 16px 20px;
+      }
+
+      .buttons-block {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="logo">
+      <a href="https://lov-me-bttr.com/tds/ae?tdsId=s8753pos_r&tds_campaign=s8753pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=8de31337&subid={Valencia}&subid2={subid2}&clickid={clickid}">
+        <img src="https://i.postimg.cc/Gmf0t5VS/518243817-122096425034940231-5815459609670978079-n.jpg" alt="Logo strony">
+      </a>
+    </div>
+
+    <div class="step-block">
+      <div class="step-item" id="step1">
+        <div class="question-title">
+          Tutaj znajdziesz spotkania bez okoliczności. Dziewczyny gotowe spełnić Twoje fantazje!
+        </div>
+        <div class="buttons-block">
+          <button class="step-btn" onclick="afficherEtape2()">Znakom z dziewczyną</button>
+        </div>
+      </div>
+
+      <div class="step-item" id="step2" style="display: none;">
+        <div class="question-title">
+          UWAGA! Czy akceptujesz szanować kobiety, których zobaczysz? Jeśli poznasz kogoś, nie mów o tym i nie rozchodź plotek.
+        </div>
+        <div class="buttons-block">
+          <a href="https://lov-me-bttr.com/tds/ae?tdsId=s8753pos_r&tds_campaign=s8753pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=8de31337&subid={Valencia}&subid2={subid2}&clickid={clickid}" class="step-btn">
+            AKCEPTUJĘ I CHCĘ ZOBACZYĆ KATALOG
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function afficherEtape2() {
+      const step1 = document.getElementById("step1");
+      const step2 = document.getElementById("step2");
+
+      step1.style.transition = "opacity 0.5s ease-in-out";
+      step2.style.transition = "opacity 0.5s ease-in-out";
+
+      step1.style.opacity = 0;
+      step2.style.opacity = 1;
+
+      setTimeout(() => {
+        step1.style.display = "none";
+        step2.style.display = "block";
+      }, 500);
+    }
+  </script>
+</body>
+</html>
